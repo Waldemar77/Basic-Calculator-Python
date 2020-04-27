@@ -16,7 +16,7 @@ from tkinter import *
 #===============================================================================
 
 root = Tk()
-root.title("Calculadora Básica")
+root.title("Calculadora Súper Básica")
 mainFrame = Frame(root, bg="black")
 mainFrame.pack()
 
@@ -89,10 +89,11 @@ entPantalla2.grid(row=2, column=3, columnspan=2)
 entPantalla2.config(justify="right")
 
 #===============================================================================
-# Fila de operaciones
+# Fila de operaciones:Identificará pulsaciones con el teclado numerico o normal 
+#y además los eventos del mouse.
 #===============================================================================
 #===============================================================================
-# Boton Suma
+# Boton Suma  
 #===============================================================================
 def btnAdd(event):
     suma(numIngreso.get())
@@ -141,6 +142,8 @@ root.bind("<KP_Divide>", btnDivide)
 
 #===============================================================================
 # Funcion suma (operacion 1)
+#Asigna a la variable 'operacion' el numero '1' y agrega a la lista el 
+#simbolo '+'.
 #===============================================================================
 def suma(num):
     global operacion
