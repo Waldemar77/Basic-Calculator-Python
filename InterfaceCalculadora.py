@@ -16,7 +16,7 @@ from tkinter import *
 #===============================================================================
 
 root = Tk()
-root.title("Calculadora Súper Básica")
+root.title("Calculadora Básica")
 mainFrame = Frame(root, bg="black")
 mainFrame.pack()
 
