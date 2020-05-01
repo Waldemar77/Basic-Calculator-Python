@@ -152,6 +152,8 @@ def suma(num):
     operacion = 1
     capturaNumeros.append("+")
     
+    #Valida si el ultimo elemento de la lista es el signo de operacion suma y si 
+    #es verdad, limpia la lista de captura de numeros para realizar una nueva opeacion
     if capturaNumeros[-1] == "+":
         capturaNumeros.clear()
     
@@ -175,6 +177,8 @@ def resta(num):
     global numResta
     
     operacion = 2
+    
+    #Verifica si la lista tiene n cantidad de signos de operaciones matematicas.
     contarSigno = resumenOperacion.count("-") + resumenOperacion.count("+") + resumenOperacion.count("x") + resumenOperacion.count("÷")
     
     if contarSigno == 0:
